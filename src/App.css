@@ -1,0 +1,154 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title {
+  color: #707070;
+  text-align: center;
+}
+
+:root {
+  background: #bba184;
+}
+
+
+.test {
+  flex-direction: column;
+  margin: 30px;
+  background: #eeeeee;
+}
+
+.image {
+  display: block;
+  margin: auto;
+  border: 50px solid #eeeeee
+}
+
+.index {
+  background: rgb(255, 255, 255);
+  border: 10px solid rgb(255, 255, 255);
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+
+/* .index h5 :hover {
+  color: #282c34;
+  cursor: pointer;
+} */
+
+.index h5{
+  margin: 5px;
+  margin-left: 20px;
+  border-radius: 0px;
+  color: #9b9b9b;
+}
+
+.index h5 #idx{
+  color: #9b9b9b;
+  text-decoration: none
+}
+
+.index h5 #idx:hover{
+  color: #282c34;
+  text-decoration: none
+}
+
+#photo {
+  width: 300px;
+  height: 180px;
+}
+
+#photo:hover {
+  width: 330px;
+  height: 198px;
+}
+
+.newpost {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.postelement {
+  width: 300px;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+}
+
+#input_title {
+  height: 5px;
+  width: 150px
+}
+
+#submit_button {
+  width: 150px
+}
+
+#input_message {
+  /* width: 200px; */
+  height: 400px;
+  word-wrap: break-word;
+}
+
+.post_element {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.clear_btn {
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  margin: 50px;
+}
+
+.hamepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post {
+  position: relative;
+  align-content: center;
+  border: 50px;
+  width: 400px;
+  word-wrap: break-word;
+  margin: 30px;
+  padding: 30px;
+  background: #dbdada;
+}
