@@ -10,7 +10,6 @@ export default class NewPost extends React.Component {
     render() {
         return (
             <div>
-                {/* <Message_list socket={this.socket}/> */}
                 <Input socket={this.socket}/>
             </div>
         );

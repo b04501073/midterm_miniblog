@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {NavLink} from "react-router-dom";
 const Input = (props) => {
     // const { className, children, onClick } = props;
     // const extraClass = className || '';
@@ -16,7 +16,6 @@ const Input = (props) => {
             document.getElementById("input_message").value = ''
             socket.emit("message",obj)
         }
-        // socket.emit("message")
     }
     return (
         <div className="newpost">
@@ -24,7 +23,8 @@ const Input = (props) => {
             <h3>標題</h3>
             <input className="postelement" placeholder="請輸入標題" id={"input_title"}/>
             <h3>內容</h3>
-            <input className="postelement" placeholder="請輸入內容" id={"input_message"}/>
+            {/* <input className="postelement" placeholder="請輸入內容" id={"input_message"}/> */}
+            <textarea rows="2" name="S1" cols="20" className="postelement" placeholder="請輸入內容" id={"input_message"}></textarea>
             <button className="postelement" onClick={Submit} id={"submit_button"}>送出</button>
         </div>
       

@@ -4,6 +4,7 @@ import './App.css';
 import Home from "./containers/home";
 import { BrowserRouter, NavLink, Switch, Route, Redirect } from "react-router-dom";
 import NewPost from './containers/NewPost'
+import Search from './containers/search'
 
 function App() {
   
@@ -15,8 +16,8 @@ function App() {
       <BrowserRouter>
         <Index />
         <Switch>
-          
-          <Route exact path="/post" component={NewPost} />           
+          <Route exact path="/post" component={NewPost} /> 
+          <Route exact path="/search" component={Search} />          
           <Route path="/" component={Home} />
           <Redirect from="/home" to="/" />
         </Switch>
@@ -28,7 +29,7 @@ function App() {
 const Index = () => <div className="index">
                         <h5><NavLink to="/home" id='idx'>HOME</NavLink></h5>
                         <h5><NavLink to="/post" id='idx'>NEW POST</NavLink></h5>
-                        {/* <Button /> */}
+                        <h5><NavLink to="/search" id='idx'>SEARCH</NavLink></h5>
                     </div>
   
 // const Button = () => <button id="searchicon"><img src="https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png"></img></button>
