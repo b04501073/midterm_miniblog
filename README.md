@@ -9,6 +9,7 @@
 - npm install
 - node server.js
 - npm start
+- server.js第17行改成自己的mondodb
 ## run
 - 點選New Post
 - 輸入標題與內容並送出
